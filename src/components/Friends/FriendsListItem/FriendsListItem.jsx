@@ -1,9 +1,15 @@
-function FriendsListItem(props) {
+import s from "./FriendsListItem.module.css";
+
+function FriendsListItem({ avatar, name, isOnline, id }) {
   return (
-    <li class="item">
-      <span class="status"></span>
-      <img class="avatar" src="" alt="" width="48" />
-      <p class="name"></p>
+    <li className={s.item} key={id}>
+      <span
+        className={
+          isOnline ? s.status + " " + s.online : s.status + " " + s.offline
+        }
+      ></span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
     </li>
   );
 }
