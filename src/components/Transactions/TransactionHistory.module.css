@@ -1,0 +1,27 @@
+.transaction_history {
+  padding: 10px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid tomato;
+  border-radius: 2px;
+}
+
+.heading_list {
+  background-color: rgb(70, 211, 211);
+  text-align: center;
+  align-items: center;
+}
+
+.heading {
+  color: rgb(241, 241, 241);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.item {
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(204, 230, 230);
+}
