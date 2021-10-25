@@ -22,10 +22,10 @@ function Statistics(props) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string,
-  id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 function getRandomColor() {
